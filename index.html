@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Canverter converts everyday purchases into energy drinks and Costco hot dogs."
+    >
+
+    <title>Canverter</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="page-layout">
+
+        <aside class="ad-column ad-column-left">
+            <div class="ad-placeholder">
+                <span>Advertisement</span>
+                <small>300 × 600</small>
+            </div>
+        </aside>
+
+        <main class="app">
+
+            <header class="app-header">
+
+                <h1>Canverter</h1>
+
+                <p class="subtitle">
+                    Financial advice measured in terrible units.
+                </p>
+
+            </header>
+
+            <section
+                class="chatbox"
+                id="chatbox"
+                aria-live="polite"
+            >
+
+                <div class="message bot">
+                    Ask me how many energy drinks your purchase is worth.
+                </div>
+
+            </section>
+
+            <section class="controls">
+
+                <label class="sr-only" for="currency">
+                    Choose a conversion currency
+                </label>
+
+                <select
+                    id="currency"
+                    aria-label="Choose conversion type"
+                >
+                    <option value="monster">
+                        Monster Energy
+                    </option>
+
+                    <option value="redbull">
+                        Red Bull
+                    </option>
+
+                    <option value="hotdog">
+                        Costco Hot Dogs
+                    </option>
+                </select>
+
+                <div class="verdict-option">
+
+                    <label for="include-verdict">
+
+                        <input
+                            type="checkbox"
+                            id="include-verdict"
+                        >
+
+                        <span>Include an official verdict</span>
+
+                    </label>
+
+                </div>
+
+                <div class="input-row">
+
+                    <label class="sr-only" for="price">
+                        Ask about a purchase
+                    </label>
+
+                    <input
+                        type="text"
+                        id="price"
+                        placeholder="Should I buy a $3,000 gaming PC?"
+                        autocomplete="off"
+                    >
+
+                    <button
+                        id="calculate"
+                        type="button"
+                    >
+                        Calculate
+                    </button>
+
+                </div>
+
+            </section>
+
+            <footer class="site-footer">
+
+                <p>
+                    Made by Jaron Cook
+                </p>
+
+                <p class="footer-disclaimer">
+                    For entertainment purposes only. Canverter is not affiliated
+                    with Monster Energy, Red Bull, Costco, or any other brands
+                    mentioned.
+                </p>
+
+            </footer>
+
+        </main>
+
+        <aside class="ad-column ad-column-right">
+            <div class="ad-placeholder">
+                <span>Advertisement</span>
+                <small>300 × 600</small>
+            </div>
+        </aside>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
